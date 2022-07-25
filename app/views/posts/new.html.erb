@@ -1,0 +1,13 @@
+<h1>Write a post!</h1>
+
+<%= form_with model: @post do |form| %>
+  <div>
+    <%= form.label "Tell me your thoughts..." %><br>
+    <%= form.text_field @post %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
