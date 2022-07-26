@@ -4,6 +4,11 @@
   <% @posts.each do |post| %>
     <li>
       <%= post.tweet %>
+      <% if user_signed_in? %>
+      <p>Posted by: <%= post.user.email %> </p>
+      <% else %>
+      <p>Posted by: Anonymous</p>
+    <% end %>
     </li>
   <% end %>
 </ul>

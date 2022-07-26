@@ -52,6 +52,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:tweet)
+    params.require(:post).permit(:tweet, :user_id)
   end
 end 
