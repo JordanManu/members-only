@@ -1,0 +1,11 @@
+<h1>Hi there! Welcome. Have a read</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= post.tweet %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Create a new Post", new_post_path %>
